@@ -14,6 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
  * 类名称:CP
  * 类描述:项目启动主类
  **/
+
 @SpringBootApplication
 @ComponentScan("com.maidao.edu.homework.springbootdemo")
 public class CP {
