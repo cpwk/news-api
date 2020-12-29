@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>com.maidao.edu</groupId>
-    <artifactId>homework</artifactId>
+    <artifactId>news</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>com.maidao.edu.homework</name>
+    <name>com.maidao.edu.news</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
