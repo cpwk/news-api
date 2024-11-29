@@ -16,7 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
  **/
 
 @SpringBootApplication
-@ComponentScan("com.maidao.edu.news.springbootdemo")
+@ComponentScan("com.maidao.edu.news")
 public class Application {
 
     public static void main(String[] args) {
