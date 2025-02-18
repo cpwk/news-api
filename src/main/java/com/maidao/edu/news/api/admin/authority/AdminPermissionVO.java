@@ -32,12 +32,10 @@ public class AdminPermissionVO extends Permission {
         List<Permission> list = initPermissions();
         List<Permission> result = new ArrayList<Permission>();
         String[] pl = ps.split(",");
-        if (pl.length > 0) {
-            for (String s : pl) {
-                for (Permission p : list) {
-                    if (s.equals(p.getCode()))
-                        result.add(p);
-                }
+        for (String s : pl) {
+            for (Permission p : list) {
+                if (s.equals(p.getCode()))
+                    result.add(p);
             }
         }
         return result;

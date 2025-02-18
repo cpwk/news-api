@@ -1,11 +1,11 @@
 package com.maidao.edu.news.api.banner.controller;
 
-import com.maidao.edu.news.common.controller.Action;
-import com.maidao.edu.news.common.controller.ActionSession;
-import com.maidao.edu.news.common.controller.BaseController;
 import com.maidao.edu.news.api.banner.model.Banner;
 import com.maidao.edu.news.api.banner.qo.BannerQo;
 import com.maidao.edu.news.api.banner.service.IBannerService;
+import com.maidao.edu.news.common.controller.Action;
+import com.maidao.edu.news.common.controller.ActionSession;
+import com.maidao.edu.news.common.controller.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

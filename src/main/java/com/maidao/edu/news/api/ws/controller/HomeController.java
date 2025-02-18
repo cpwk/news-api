@@ -1,6 +1,5 @@
 package com.maidao.edu.news.api.ws.controller;
 
-import com.maidao.edu.news.api.qa.model.QAPaper;
 import com.maidao.edu.news.api.article.model.Article;
 import com.maidao.edu.news.api.article.qo.ArticleQo;
 import com.maidao.edu.news.api.article.service.IArticleService;
@@ -22,6 +21,7 @@ import com.maidao.edu.news.api.practice.model.Practice;
 import com.maidao.edu.news.api.practice.qo.PracticeQo;
 import com.maidao.edu.news.api.practice.qo.PracticeWo;
 import com.maidao.edu.news.api.practice.service.IPracticeService;
+import com.maidao.edu.news.api.qa.model.QAPaper;
 import com.maidao.edu.news.api.qa.service.IQAService;
 import com.maidao.edu.news.api.trainer.model.Trainer;
 import com.maidao.edu.news.api.trainer.qo.TrainerQo;

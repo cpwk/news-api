@@ -1,10 +1,10 @@
 package com.maidao.edu.news.api.trainer.service;
 
-import com.maidao.edu.news.common.entity.ValCode;
 import com.maidao.edu.news.api.trainer.model.Trainer;
 import com.maidao.edu.news.api.trainer.model.TrainerSession;
 import com.maidao.edu.news.api.trainer.qo.TrainerQo;
 import com.maidao.edu.news.api.trainer.qo.TrainerSessionQo;
+import com.maidao.edu.news.common.entity.ValCode;
 import com.maidao.edu.news.common.exception.ServiceException;
 import org.springframework.data.domain.Page;
 

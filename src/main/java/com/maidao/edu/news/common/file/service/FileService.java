@@ -11,15 +11,11 @@ import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
 import com.aliyuncs.sts.model.v20150401.AssumeRoleRequest;
 import com.aliyuncs.sts.model.v20150401.AssumeRoleResponse;
-import com.maidao.edu.news.common.util.L;
-import com.maidao.edu.news.common.util.R;
-import com.maidao.edu.news.common.util.StringUtils;
-import com.maidao.edu.news.common.util.URLUtils;
-import com.maidao.edu.news.common.util.UUIDCreatorFactory;
 import com.maidao.edu.news.common.file.entity.AliUploadToken;
 import com.maidao.edu.news.common.file.entity.FileConfig;
 import com.maidao.edu.news.common.file.entity.UploadOptions;
 import com.maidao.edu.news.common.file.entity.UploadToken;
+import com.maidao.edu.news.common.util.*;
 import com.sunnysuperman.commons.util.FileUtil;
 import com.sunnysuperman.commons.util.JSONUtil;
 import com.sunnysuperman.commons.util.PlaceholderUtil;
@@ -55,7 +51,7 @@ public class FileService {
     @Autowired
     private FileConfig ossFConfig;
     private OSSClient ossClient;
-    private UUIDCreatorFactory.UUIDCreator ossFileNameCreator = UUIDCreatorFactory.get();
+    private final UUIDCreatorFactory.UUIDCreator ossFileNameCreator = UUIDCreatorFactory.get();
 
     private static AssumeRoleResponse assumeRole(String accessKeyId, String accessKeySecret, String roleArn,
                                                  String roleSessionName, String policy, int expireSeconds) throws Exception {
@@ -130,8 +126,7 @@ public class FileService {
         String fileName = options.getFileName() != null ? options.getFileName() : file.getName();
         String objectKey = generateObjectKey(options.getNamespace(), fileName, options.getRandomLength());
         ossClient.putObject(ossFConfig.getBucket(), objectKey, file, metadata);
-        return new StringBuilder("http://").append(ossFConfig.getCanonicalDomain()).append("/").append(objectKey)
-                .toString();
+        return "http://" + ossFConfig.getCanonicalDomain() + "/" + objectKey;
     }
 
     public UploadToken uploadToken(String namespace, String fileName, int fileSize, boolean cdn) throws Exception {

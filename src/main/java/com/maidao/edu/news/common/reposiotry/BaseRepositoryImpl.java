@@ -1,11 +1,6 @@
 package com.maidao.edu.news.common.reposiotry;
 
-import com.maidao.edu.news.common.reposiotry.support.DataQueryObject;
-import com.maidao.edu.news.common.reposiotry.support.DataQueryObjectPage;
-import com.maidao.edu.news.common.reposiotry.support.DataQueryObjectSort;
-import com.maidao.edu.news.common.reposiotry.support.QueryBetween;
-import com.maidao.edu.news.common.reposiotry.support.QueryField;
-import com.maidao.edu.news.common.reposiotry.support.QueryType;
+import com.maidao.edu.news.common.reposiotry.support.*;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -265,7 +260,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
         if (queryFiled.indexOf(".") < 0) {
             return root.get(queryFiled);
         } else {
-            return getRootByQueryFiled(queryFiled.substring(queryFiled.indexOf(".") + 1, queryFiled.length()), root.get(queryFiled.substring(0, queryFiled.indexOf("."))));
+            return getRootByQueryFiled(queryFiled.substring(queryFiled.indexOf(".") + 1), root.get(queryFiled.substring(0, queryFiled.indexOf("."))));
         }
     }
 
@@ -273,7 +268,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
         if (queryFiled.indexOf(".") < 0) {
             return path.get(queryFiled);
         } else {
-            return getRootByQueryFiled(queryFiled.substring(queryFiled.indexOf(".") + 1, queryFiled.length()), path.get(queryFiled.substring(0, queryFiled.indexOf("."))));
+            return getRootByQueryFiled(queryFiled.substring(queryFiled.indexOf(".") + 1), path.get(queryFiled.substring(0, queryFiled.indexOf("."))));
         }
     }
 
@@ -281,7 +276,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
         if (queryFiled.indexOf(".") < 0) {
             return root.get(queryFiled);
         } else {
-            return getRootByQueryFiledString(queryFiled.substring(queryFiled.indexOf(".") + 1, queryFiled.length()), root.get(queryFiled.substring(0, queryFiled.indexOf("."))));
+            return getRootByQueryFiledString(queryFiled.substring(queryFiled.indexOf(".") + 1), root.get(queryFiled.substring(0, queryFiled.indexOf("."))));
         }
     }
 
@@ -289,7 +284,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
         if (queryFiled.indexOf(".") < 0) {
             return path.get(queryFiled);
         } else {
-            return getRootByQueryFiledString(queryFiled.substring(queryFiled.indexOf(".") + 1, queryFiled.length()), path.get(queryFiled.substring(0, queryFiled.indexOf("."))));
+            return getRootByQueryFiledString(queryFiled.substring(queryFiled.indexOf(".") + 1), path.get(queryFiled.substring(0, queryFiled.indexOf("."))));
         }
     }
 
@@ -297,7 +292,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
         if (queryFiled.indexOf(".") < 0) {
             return root.get(queryFiled);
         } else {
-            return getRootByQueryFiledComparable(queryFiled.substring(queryFiled.indexOf(".") + 1, queryFiled.length()), root.get(queryFiled.substring(0, queryFiled.indexOf("."))));
+            return getRootByQueryFiledComparable(queryFiled.substring(queryFiled.indexOf(".") + 1), root.get(queryFiled.substring(0, queryFiled.indexOf("."))));
         }
     }
 
@@ -305,7 +300,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
         if (queryFiled.indexOf(".") < 0) {
             return path.get(queryFiled);
         } else {
-            return getRootByQueryFiledComparable(queryFiled.substring(queryFiled.indexOf(".") + 1, queryFiled.length()), path.get(queryFiled.substring(0, queryFiled.indexOf("."))));
+            return getRootByQueryFiledComparable(queryFiled.substring(queryFiled.indexOf(".") + 1), path.get(queryFiled.substring(0, queryFiled.indexOf("."))));
         }
     }
 

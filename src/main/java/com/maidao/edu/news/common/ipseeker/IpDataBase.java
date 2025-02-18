@@ -63,7 +63,7 @@ public class IpDataBase {
         OutputStream os = null;
         try {
             os = new FileOutputStream(TMP_FILE);
-            byte buffer[] = new byte[1024];
+            byte[] buffer = new byte[1024];
 
             int len = 0;
             while ((len = is.read(buffer)) != -1) {

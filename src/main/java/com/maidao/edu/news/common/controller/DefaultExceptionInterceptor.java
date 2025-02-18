@@ -1,10 +1,10 @@
 package com.maidao.edu.news.common.controller;
 
-import com.maidao.edu.news.common.util.L;
 import com.maidao.edu.news.common.context.Contexts;
 import com.maidao.edu.news.common.exception.RuntimeServiceException;
 import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.common.resources.LocaleBundles;
+import com.maidao.edu.news.common.util.L;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.method.HandlerMethod;

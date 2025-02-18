@@ -1,9 +1,9 @@
 package com.maidao.edu.news.api.trainingproject.service;
 
-import com.maidao.edu.news.api.trainingproject.repository.ITrainingProjectRepository;
-import com.maidao.edu.news.common.entity.Constants;
 import com.maidao.edu.news.api.trainingproject.model.TrainingProject;
 import com.maidao.edu.news.api.trainingproject.qo.TrainingProjectQo;
+import com.maidao.edu.news.api.trainingproject.repository.ITrainingProjectRepository;
+import com.maidao.edu.news.common.entity.Constants;
 import com.maidao.edu.news.common.exception.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

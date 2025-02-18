@@ -11,9 +11,9 @@ package com.maidao.edu.news.common.cache;
 
 public class CacheOptions {
 
-    private String key;
-    private int version;
-    private int expireIn;
+    private final String key;
+    private final int version;
+    private final int expireIn;
 
     public CacheOptions(String key, int version, int expireIn) {
         super();

@@ -1,8 +1,8 @@
 package com.maidao.edu.news.api.banner.service;
 
-import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.api.banner.model.Banner;
 import com.maidao.edu.news.api.banner.qo.BannerQo;
+import com.maidao.edu.news.common.exception.ServiceException;
 
 import java.util.List;
 

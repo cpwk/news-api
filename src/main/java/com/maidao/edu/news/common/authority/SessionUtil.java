@@ -6,11 +6,11 @@ import com.maidao.edu.news.api.admin.model.AdminSessionWrap;
 import com.maidao.edu.news.api.admin.service.AdminService;
 import com.maidao.edu.news.api.user.model.UserSession;
 import com.maidao.edu.news.api.user.service.UserService;
+import com.maidao.edu.news.common.context.Contexts;
+import com.maidao.edu.news.common.context.SessionWrap;
 import com.maidao.edu.news.common.exception.ErrorCode;
 import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.common.util.StringUtils;
-import com.maidao.edu.news.common.context.Contexts;
-import com.maidao.edu.news.common.context.SessionWrap;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
@@ -80,10 +80,7 @@ public class SessionUtil {
         if (session == null) {
             return false;
         }
-        if (session.getExpireAt() < System.currentTimeMillis()) {
-            return false;
-        }
-        return true;
+        return session.getExpireAt() >= System.currentTimeMillis();
     }
 
     public boolean checkAdminToken(String token) throws Exception {
@@ -144,6 +141,7 @@ public class SessionUtil {
                     for (String p : ps) {
                         if (p.equals(permission)) {
                             pass = true;
+                            break;
                         }
                     }
                 }

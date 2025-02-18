@@ -1,12 +1,12 @@
 package com.maidao.edu.news.api.qa.controller;
 
+import com.maidao.edu.news.api.heavywork.service.IHeavyWorkService;
 import com.maidao.edu.news.api.qa.model.QATemplate;
 import com.maidao.edu.news.api.qa.qo.QAPaperQo;
-import com.maidao.edu.news.common.controller.BaseController;
-import com.maidao.edu.news.api.heavywork.service.IHeavyWorkService;
 import com.maidao.edu.news.api.qa.service.IQAService;
 import com.maidao.edu.news.common.controller.Action;
 import com.maidao.edu.news.common.controller.ActionSession;
+import com.maidao.edu.news.common.controller.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

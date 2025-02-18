@@ -1,9 +1,9 @@
 package com.maidao.edu.news.api.trainer.qo;
 
 
+import com.maidao.edu.news.common.reposiotry.support.DataQueryObjectPage;
 import com.maidao.edu.news.common.reposiotry.support.QueryField;
 import com.maidao.edu.news.common.reposiotry.support.QueryType;
-import com.maidao.edu.news.common.reposiotry.support.DataQueryObjectPage;
 
 /**
  * 创建人:chenpeng

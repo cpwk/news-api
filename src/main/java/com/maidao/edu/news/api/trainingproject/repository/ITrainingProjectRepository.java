@@ -1,8 +1,8 @@
 package com.maidao.edu.news.api.trainingproject.repository;
 
 
-import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import com.maidao.edu.news.api.trainingproject.model.TrainingProject;
+import com.maidao.edu.news.common.reposiotry.BaseRepository;
 
 /**
  * 创建人:chenpeng

@@ -24,7 +24,7 @@ import java.util.Map.Entry;
 
 @StaticInit
 public class LocaleBundles {
-    private static String DEFAULT_LOCALE;
+    private static final String DEFAULT_LOCALE;
     private static SimpleLocaleBundle BUNDLE = null;
 
     static {

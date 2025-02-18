@@ -2,9 +2,9 @@ package com.maidao.edu.news.api.term.controller;
 
 import com.maidao.edu.news.api.term.model.Term;
 import com.maidao.edu.news.api.term.service.ITermService;
+import com.maidao.edu.news.common.controller.Action;
 import com.maidao.edu.news.common.controller.ActionSession;
 import com.maidao.edu.news.common.controller.BaseController;
-import com.maidao.edu.news.common.controller.Action;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

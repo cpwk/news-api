@@ -1,7 +1,6 @@
 package com.maidao.edu.news.api.trainer.controller;
 
 
-import com.maidao.edu.news.common.entity.ValCode;
 import com.maidao.edu.news.api.trainer.model.Trainer;
 import com.maidao.edu.news.api.trainer.service.ITrainerService;
 import com.maidao.edu.news.common.authority.AdminType;
@@ -9,6 +8,7 @@ import com.maidao.edu.news.common.authority.RequiredPermission;
 import com.maidao.edu.news.common.controller.Action;
 import com.maidao.edu.news.common.controller.ActionSession;
 import com.maidao.edu.news.common.controller.BaseController;
+import com.maidao.edu.news.common.entity.ValCode;
 import com.maidao.edu.news.common.service.ICommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

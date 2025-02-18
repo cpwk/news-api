@@ -1,9 +1,9 @@
 package com.maidao.edu.news.api.trainee.authority;
 
-import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.common.context.Context;
 import com.maidao.edu.news.common.context.Contexts;
 import com.maidao.edu.news.common.context.SessionWrap;
+import com.maidao.edu.news.common.exception.ServiceException;
 
 /**
  * 创建人:chenpeng

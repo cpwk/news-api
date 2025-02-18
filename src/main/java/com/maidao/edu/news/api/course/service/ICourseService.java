@@ -2,14 +2,10 @@ package com.maidao.edu.news.api.course.service;
 
 
 import com.maidao.edu.news.api.course.model.Chapter;
-import com.maidao.edu.news.api.course.qo.ChapterQo;
-import com.maidao.edu.news.api.course.qo.CourseQo;
-import com.maidao.edu.news.api.course.qo.CourseWo;
-import com.maidao.edu.news.api.course.qo.LessonQo;
-import com.maidao.edu.news.api.course.qo.LessonWo;
-import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.api.course.model.Course;
 import com.maidao.edu.news.api.course.model.Lesson;
+import com.maidao.edu.news.api.course.qo.*;
+import com.maidao.edu.news.common.exception.ServiceException;
 import org.springframework.data.domain.Page;
 
 import java.util.List;

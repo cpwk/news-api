@@ -10,6 +10,6 @@ package com.maidao.edu.news.api.course.entity;
  **/
 public enum CourseType {
 
-    Java, MySQL, React;
+    Java, MySQL, React
 
 }

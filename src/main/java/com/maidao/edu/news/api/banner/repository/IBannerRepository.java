@@ -1,7 +1,7 @@
 package com.maidao.edu.news.api.banner.repository;
 
-import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import com.maidao.edu.news.api.banner.model.Banner;
+import com.maidao.edu.news.common.reposiotry.BaseRepository;
 
 /**
  * 创建人:chenpeng

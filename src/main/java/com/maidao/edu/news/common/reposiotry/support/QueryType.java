@@ -27,9 +27,9 @@ public enum QueryType {
     IN(false);
 
     //	是否可以为空
-    private boolean isCanBeNull;
+    private final boolean isCanBeNull;
 
-    private QueryType(boolean isCanBeNull) {
+    QueryType(boolean isCanBeNull) {
         this.isCanBeNull = isCanBeNull;
     }
 

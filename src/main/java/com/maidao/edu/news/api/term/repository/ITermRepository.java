@@ -1,7 +1,7 @@
 package com.maidao.edu.news.api.term.repository;
 
-import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import com.maidao.edu.news.api.term.model.Term;
+import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

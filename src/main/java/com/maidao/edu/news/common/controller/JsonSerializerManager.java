@@ -16,7 +16,7 @@ import java.util.Map;
  * 类描述:TODO
  **/
 public class JsonSerializerManager {
-    private static Map<Type, ObjectSerializer> serializers = new HashMap<>();
+    private static final Map<Type, ObjectSerializer> serializers = new HashMap<>();
 
     public static void register(Type type, ObjectSerializer serializer) {
         synchronized (serializers) {

@@ -12,7 +12,7 @@ import java.util.Map;
  **/
 public class ServiceException extends RuntimeException {
     private static final long serialVersionUID = 6747739587143099754L;
-    private int errorCode;
+    private final int errorCode;
     private Object[] errorParams;
     private Map<?, ?> errorData;
 

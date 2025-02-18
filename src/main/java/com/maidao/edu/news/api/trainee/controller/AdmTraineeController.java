@@ -1,13 +1,13 @@
 package com.maidao.edu.news.api.trainee.controller;
 
-import com.maidao.edu.news.common.controller.Action;
-import com.maidao.edu.news.common.controller.ActionSession;
-import com.maidao.edu.news.common.controller.BaseController;
 import com.maidao.edu.news.api.heavywork.service.IHeavyWorkService;
 import com.maidao.edu.news.api.trainee.model.Trainee;
 import com.maidao.edu.news.api.trainee.qo.TraineeQo;
 import com.maidao.edu.news.api.trainee.qo.TraineeSessionQo;
 import com.maidao.edu.news.api.trainee.service.ITraineeService;
+import com.maidao.edu.news.common.controller.Action;
+import com.maidao.edu.news.common.controller.ActionSession;
+import com.maidao.edu.news.common.controller.BaseController;
 import com.maidao.edu.news.common.exception.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -47,11 +47,11 @@ public class IPSeeker {
     private static final byte REDIRECT_MODE_1 = 0x01;
     private static final byte REDIRECT_MODE_2 = 0x02;
     // Log对象
-    private static Log log = LogFactory.getLog(IPSeeker.class);
+    private static final Log log = LogFactory.getLog(IPSeeker.class);
     // 单一模式实例
-    private static IPSeeker instance = new IPSeeker();
+    private static final IPSeeker instance = new IPSeeker();
     // 用来做为cache，查询一个ip时首先查看cache，以减少不必要的重复查找
-    private Map<String, IPLocation> ipCache;
+    private final Map<String, IPLocation> ipCache;
     // 随机文件访问类
     private RandomAccessFile ipFile;
     // 内存映射文件
@@ -59,10 +59,11 @@ public class IPSeeker {
     // 起始地区的开始和结束的绝对偏移
     private long ipBegin, ipEnd;
     // 为提高效率而采用的临时变量
-    private IPLocation loc;
-    private byte[] buf;
-    private byte[] b4;
-    private byte[] b3;
+    private final IPLocation loc;
+    private final byte[] buf;
+    private final byte[] b4;
+    private final byte[] b3;
+
     /**
      * 私有构造函数
      *

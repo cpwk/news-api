@@ -1,10 +1,10 @@
 package com.maidao.edu.news.api.heavywork.service;
 
+import com.maidao.edu.news.api.heavywork.entity.HeavyWorkConstants;
+import com.maidao.edu.news.api.heavywork.model.HeavyWork;
 import com.maidao.edu.news.api.heavywork.repository.HeavyWorkRepository;
 import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.common.util.StringUtils;
-import com.maidao.edu.news.api.heavywork.entity.HeavyWorkConstants;
-import com.maidao.edu.news.api.heavywork.model.HeavyWork;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

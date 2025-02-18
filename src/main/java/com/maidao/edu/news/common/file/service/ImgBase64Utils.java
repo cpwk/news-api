@@ -43,9 +43,7 @@ public class ImgBase64Utils {
             }
             String prefix = "data:" + contentType + ";base64,";
             String imgAsBase64 = Base64Utils.encode(bytes);
-            StringBuilder buf = new StringBuilder(prefix.length() + imgAsBase64.length());
-            buf.append(prefix).append(imgAsBase64);
-            result = buf.toString();
+            result = prefix + imgAsBase64;
         } else {
             result = StringUtil.EMPTY;
         }

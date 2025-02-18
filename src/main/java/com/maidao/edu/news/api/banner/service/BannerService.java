@@ -1,11 +1,11 @@
 package com.maidao.edu.news.api.banner.service;
 
+import com.maidao.edu.news.api.banner.model.Banner;
+import com.maidao.edu.news.api.banner.qo.BannerQo;
 import com.maidao.edu.news.api.banner.repository.IBannerRepository;
 import com.maidao.edu.news.common.exception.ErrorCode;
 import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.common.util.StringUtils;
-import com.maidao.edu.news.api.banner.model.Banner;
-import com.maidao.edu.news.api.banner.qo.BannerQo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

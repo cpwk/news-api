@@ -1,8 +1,8 @@
 package com.maidao.edu.news.api.course.repository;
 
 
-import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import com.maidao.edu.news.api.course.model.Chapter;
+import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 /**

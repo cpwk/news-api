@@ -3,10 +3,10 @@ package com.maidao.edu.news.common.mail;
 import com.maidao.edu.news.api.admin.model.AdminErrors;
 import com.maidao.edu.news.api.user.model.UserErrors;
 import com.maidao.edu.news.common.entity.ValCode;
-import com.maidao.edu.news.common.util.L;
-import com.maidao.edu.news.common.util.StringUtils;
 import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.common.service.ICommonService;
+import com.maidao.edu.news.common.util.L;
+import com.maidao.edu.news.common.util.StringUtils;
 import com.sunnysuperman.commons.config.PropertiesConfig;
 import com.sunnysuperman.commons.util.JSONUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +30,7 @@ public class MailService implements IMailService, AdminErrors {
 
     @Value("${mailConfig}")
     private String mailConfig;
-    private MailHelper.MailConnectionInfo connectionInfo = new MailHelper.MailConnectionInfo();
+    private final MailHelper.MailConnectionInfo connectionInfo = new MailHelper.MailConnectionInfo();
     private String from = null;
 
     @PostConstruct

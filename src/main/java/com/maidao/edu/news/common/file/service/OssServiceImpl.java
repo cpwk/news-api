@@ -1,9 +1,9 @@
 package com.maidao.edu.news.common.file.service;
 
 import com.aliyun.oss.OSSClient;
-import com.maidao.edu.news.common.util.StringUtils;
 import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.common.file.entity.OSSConfig;
+import com.maidao.edu.news.common.util.StringUtils;
 import com.sunnysuperman.commons.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

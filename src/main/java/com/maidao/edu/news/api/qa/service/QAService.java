@@ -1,5 +1,10 @@
 package com.maidao.edu.news.api.qa.service;
 
+import com.maidao.edu.news.api.heavywork.model.HeavyWork;
+import com.maidao.edu.news.api.heavywork.service.IHeavyWorkService;
+import com.maidao.edu.news.api.qa.entity.FormItemType;
+import com.maidao.edu.news.api.qa.entity.QAConstants;
+import com.maidao.edu.news.api.qa.entity.QAItem;
 import com.maidao.edu.news.api.qa.model.QAPaper;
 import com.maidao.edu.news.api.qa.model.QATemplate;
 import com.maidao.edu.news.api.qa.qo.QAPaperQo;
@@ -8,15 +13,10 @@ import com.maidao.edu.news.api.qa.repository.IQATemplateRepository;
 import com.maidao.edu.news.common.exception.ServiceException;
 import com.maidao.edu.news.common.file.entity.UploadOptions;
 import com.maidao.edu.news.common.file.service.FileService;
+import com.maidao.edu.news.common.region.RegionService;
 import com.maidao.edu.news.common.task.ApiTask;
 import com.maidao.edu.news.common.task.TaskService;
 import com.maidao.edu.news.common.util.L;
-import com.maidao.edu.news.api.heavywork.model.HeavyWork;
-import com.maidao.edu.news.api.heavywork.service.IHeavyWorkService;
-import com.maidao.edu.news.api.qa.entity.FormItemType;
-import com.maidao.edu.news.api.qa.entity.QAConstants;
-import com.maidao.edu.news.api.qa.entity.QAItem;
-import com.maidao.edu.news.common.region.RegionService;
 import com.sunnysuperman.commons.util.FileUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;

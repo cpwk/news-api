@@ -13,8 +13,8 @@ import java.util.regex.Pattern;
  **/
 public class SimpleHtmlParser {
 
-    private static String regEx_script = "<script[^>]*?>[\\s\\S]*?<\\/script>"; // 定义script的正则表达式
-    private static String regEx_copyright = "<p data-f-id=[^>]*?>.*?</p>"; // 定义script的正则表达式
+    private static final String regEx_script = "<script[^>]*?>[\\s\\S]*?<\\/script>"; // 定义script的正则表达式
+    private static final String regEx_copyright = "<p data-f-id=[^>]*?>.*?</p>"; // 定义script的正则表达式
 
     // 过滤script标签
     public static String removeScript(String html) {

@@ -16,7 +16,7 @@ import com.sunnysuperman.kvcache.converter.ModelConverter;
 
 public class KvCacheWrap<K, T> extends DefaultKvCache<K, T> {
 
-    private TaskService taskService;
+    private final TaskService taskService;
 
     public KvCacheWrap(KvCacheExecutor executor, KvCachePolicy policy, RepositoryProvider<K, T> repository,
                        ModelConverter<T> converter, KvCacheSaveFilter<T> saveFilter, TaskService taskService) {

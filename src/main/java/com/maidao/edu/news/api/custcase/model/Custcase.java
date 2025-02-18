@@ -1,7 +1,7 @@
 package com.maidao.edu.news.api.custcase.model;
 
-import com.maidao.edu.news.api.custcase.entity.CaseBanner;
 import com.maidao.edu.news.api.custcase.converter.CaseBannerArrayConverter;
+import com.maidao.edu.news.api.custcase.entity.CaseBanner;
 import com.maidao.edu.news.common.util.SimpleHtmlParser;
 
 import javax.persistence.*;

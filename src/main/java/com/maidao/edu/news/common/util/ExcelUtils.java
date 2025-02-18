@@ -168,7 +168,7 @@ public class ExcelUtils {
     }
 
     public static <M> List<M> read(File file, ExcelColumn[] columns, RowParser<M> parser)
-            throws ExcelException, Exception {
+            throws Exception {
         Workbook wb = getWorkbook(file);
         Sheet sheet = wb.getSheetAt(0);
         return read(sheet, columns, parser);
@@ -269,12 +269,12 @@ public class ExcelUtils {
         return d;
     }
 
-    public static enum ExcelCellType {
+    public enum ExcelCellType {
         STRING(1), INT(2), FLOAT(3), DOUBLE(4), LONG(5);
 
-        private byte value;
+        private final byte value;
 
-        private ExcelCellType(int value) {
+        ExcelCellType(int value) {
             this.value = (byte) value;
         }
 
@@ -292,18 +292,18 @@ public class ExcelUtils {
         }
     }
 
-    public static interface RowRenderer<R> {
+    public interface RowRenderer<R> {
         void render(Row row, R item);
     }
 
-    public static interface RowParser<P> {
+    public interface RowParser<P> {
         P parse(Map<String, Object> dataAsMap, List<P> list, int rowIndex) throws Exception;
     }
 
     public static class ExcelColumn {
-        private String key;
-        private String title;
-        private ExcelCellType type;
+        private final String key;
+        private final String title;
+        private final ExcelCellType type;
 
         public ExcelColumn(String key, String title, ExcelCellType type) {
             super();
@@ -345,7 +345,7 @@ public class ExcelUtils {
         public static final int ERROR_COULD_NOT_FIND_COLUMN = 3;
         public static final int ERROR_UNKNOWN_CELL_TYPE = 4;
         private static final long serialVersionUID = 7945107291355792219L;
-        private int errorCode;
+        private final int errorCode;
         private Object[] errorParams;
 
         public ExcelException(int errorCode) {

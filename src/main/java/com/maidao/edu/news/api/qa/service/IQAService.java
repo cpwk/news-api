@@ -1,11 +1,11 @@
 package com.maidao.edu.news.api.qa.service;
 
 
+import com.maidao.edu.news.api.heavywork.model.HeavyWork;
 import com.maidao.edu.news.api.qa.model.QAPaper;
 import com.maidao.edu.news.api.qa.model.QATemplate;
 import com.maidao.edu.news.api.qa.qo.QAPaperQo;
 import com.maidao.edu.news.common.exception.ServiceException;
-import com.maidao.edu.news.api.heavywork.model.HeavyWork;
 import org.springframework.data.domain.Page;
 
 import java.util.List;

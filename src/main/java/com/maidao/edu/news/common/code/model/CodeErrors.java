@@ -13,10 +13,10 @@ import com.maidao.edu.news.common.exception.ErrorCode;
 
 public interface CodeErrors extends ErrorCode {
 
-    public static final int ERR_VCODE_INVALID = 100;
-    public static final int ERR_VCODE_OVERTIME = 101;
-    public static final int ERR_MOBILE_INVALID = 102;
-    public static final int ERR_ALIYUN_EXCEPTION = 103;
-    public static final int ERR_MOBILE_VCODE_OVERTIME = 104;
+    int ERR_VCODE_INVALID = 100;
+    int ERR_VCODE_OVERTIME = 101;
+    int ERR_MOBILE_INVALID = 102;
+    int ERR_ALIYUN_EXCEPTION = 103;
+    int ERR_MOBILE_VCODE_OVERTIME = 104;
 
 }

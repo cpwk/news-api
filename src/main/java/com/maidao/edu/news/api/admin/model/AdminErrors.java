@@ -13,11 +13,11 @@ import com.maidao.edu.news.common.exception.ErrorCode;
 
 public interface AdminErrors extends ErrorCode {
 
-    public final static int ERR_ADMIN_MOBILE_INVALID = 1000;
-    public final static int ERR_ADMIN_PASSWORD_FORMAT = 1001;
-    public final static int ERR_ADMIN_NOTEXIST = 1002;
-    public final static int ERR_ADMIN_PASSWORD_ERROR = 1003;
-    public final static int ERR_ADMIN_UNREACHED_ERROR = 1004;
-    public final static int ERR_ADMIN_USERNAME_USED = 1005;
+    int ERR_ADMIN_MOBILE_INVALID = 1000;
+    int ERR_ADMIN_PASSWORD_FORMAT = 1001;
+    int ERR_ADMIN_NOTEXIST = 1002;
+    int ERR_ADMIN_PASSWORD_ERROR = 1003;
+    int ERR_ADMIN_UNREACHED_ERROR = 1004;
+    int ERR_ADMIN_USERNAME_USED = 1005;
 
 }

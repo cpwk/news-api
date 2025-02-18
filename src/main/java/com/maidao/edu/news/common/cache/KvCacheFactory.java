@@ -35,7 +35,7 @@ public class KvCacheFactory {
     private TaskService taskService;
     private KvCacheExecutor executor;
     private RedisClient client;
-    private Set<String> registeredKeys = new HashSet<>();
+    private final Set<String> registeredKeys = new HashSet<>();
 
     @PostConstruct
     public void init() {

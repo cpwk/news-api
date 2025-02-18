@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class JsonView extends AbstractView {
 
-    private Object result;
+    private final Object result;
 
     public JsonView(Object result) {
         super();

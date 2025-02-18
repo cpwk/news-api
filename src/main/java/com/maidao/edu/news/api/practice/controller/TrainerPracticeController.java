@@ -2,7 +2,6 @@ package com.maidao.edu.news.api.practice.controller;
 
 
 import com.alibaba.fastjson.JSON;
-import com.maidao.edu.news.common.entity.KeyValue;
 import com.maidao.edu.news.api.practice.entity.PracticeItemTypeVO;
 import com.maidao.edu.news.api.practice.model.Practice;
 import com.maidao.edu.news.api.practice.qo.PracticeQo;
@@ -11,6 +10,7 @@ import com.maidao.edu.news.api.practice.service.IPracticeService;
 import com.maidao.edu.news.common.controller.Action;
 import com.maidao.edu.news.common.controller.ActionSession;
 import com.maidao.edu.news.common.controller.BaseController;
+import com.maidao.edu.news.common.entity.KeyValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,7 +33,7 @@ public class TrainerPracticeController extends BaseController {
     @Autowired
     private IPracticeService practiceService;
 
-    private List<KeyValue> formTypes = PracticeItemTypeVO.getTypes();
+    private final List<KeyValue> formTypes = PracticeItemTypeVO.getTypes();
 
     @RequestMapping(value = "/formTypes")
     @Action(session = ActionSession.NONE)

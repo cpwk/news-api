@@ -1,11 +1,11 @@
 package com.maidao.edu.news.common.code.controller;
 
+import com.maidao.edu.news.common.code.model.VCode;
+import com.maidao.edu.news.common.code.service.VCodeServiceImp;
 import com.maidao.edu.news.common.controller.Action;
 import com.maidao.edu.news.common.controller.ActionSession;
 import com.maidao.edu.news.common.controller.BaseController;
 import com.maidao.edu.news.common.util.RandomValidateCodeUtil;
-import com.maidao.edu.news.common.code.model.VCode;
-import com.maidao.edu.news.common.code.service.VCodeServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

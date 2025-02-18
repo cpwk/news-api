@@ -1,8 +1,8 @@
 package com.maidao.edu.news.api.news.service;
 
-import com.maidao.edu.news.api.news.repository.NewsRepository;
 import com.maidao.edu.news.api.news.model.News;
 import com.maidao.edu.news.api.news.qo.NewsQo;
+import com.maidao.edu.news.api.news.repository.NewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;

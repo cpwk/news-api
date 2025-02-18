@@ -1,8 +1,8 @@
 package com.maidao.edu.news.api.trainee.repository;
 
 
-import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import com.maidao.edu.news.api.trainee.model.TraineeSession;
+import com.maidao.edu.news.common.reposiotry.BaseRepository;
 
 /**
  * 创建人:chenpeng

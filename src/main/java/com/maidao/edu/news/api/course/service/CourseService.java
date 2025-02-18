@@ -1,11 +1,10 @@
 package com.maidao.edu.news.api.course.service;
 
 
-import com.maidao.edu.news.api.course.qo.ChapterQo;
-import com.maidao.edu.news.api.course.qo.CourseQo;
-import com.maidao.edu.news.api.course.qo.CourseWo;
-import com.maidao.edu.news.api.course.qo.LessonQo;
-import com.maidao.edu.news.api.course.qo.LessonWo;
+import com.maidao.edu.news.api.course.model.Chapter;
+import com.maidao.edu.news.api.course.model.Course;
+import com.maidao.edu.news.api.course.model.Lesson;
+import com.maidao.edu.news.api.course.qo.*;
 import com.maidao.edu.news.api.course.repository.IChapterRepository;
 import com.maidao.edu.news.api.course.repository.ICourseRepository;
 import com.maidao.edu.news.api.course.repository.ILessonRepository;
@@ -14,13 +13,10 @@ import com.maidao.edu.news.api.trainer.service.ITrainerService;
 import com.maidao.edu.news.common.cache.CacheOptions;
 import com.maidao.edu.news.common.cache.KvCacheFactory;
 import com.maidao.edu.news.common.cache.KvCacheWrap;
+import com.maidao.edu.news.common.context.Contexts;
 import com.maidao.edu.news.common.entity.Constants;
 import com.maidao.edu.news.common.exception.RepositoryException;
 import com.maidao.edu.news.common.exception.ServiceException;
-import com.maidao.edu.news.api.course.model.Chapter;
-import com.maidao.edu.news.api.course.model.Course;
-import com.maidao.edu.news.api.course.model.Lesson;
-import com.maidao.edu.news.common.context.Contexts;
 import com.sunnysuperman.kvcache.RepositoryProvider;
 import com.sunnysuperman.kvcache.converter.BeanModelConverter;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -15,10 +15,10 @@ public enum TimeUnit {
             Calendar.DAY_OF_MONTH), HOUR("H",
             Calendar.HOUR_OF_DAY), MINUTE("I", Calendar.MINUTE), SECOND("S", Calendar.SECOND);
 
-    private String value;
-    private int calendarUnit;
+    private final String value;
+    private final int calendarUnit;
 
-    private TimeUnit(String value, int calendarUnit) {
+    TimeUnit(String value, int calendarUnit) {
         this.value = value;
         this.calendarUnit = calendarUnit;
     }

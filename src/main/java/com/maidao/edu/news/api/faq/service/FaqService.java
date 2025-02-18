@@ -1,18 +1,18 @@
 package com.maidao.edu.news.api.faq.service;
 
-import com.maidao.edu.news.api.faq.repository.IFaqRepository;
-import com.maidao.edu.news.common.cache.CacheOptions;
-import com.maidao.edu.news.common.cache.KvCacheFactory;
-import com.maidao.edu.news.common.cache.KvCacheWrap;
-import com.maidao.edu.news.common.entity.Constants;
-import com.maidao.edu.news.common.util.L;
-import com.maidao.edu.news.common.util.StringUtils;
 import com.maidao.edu.news.api.faq.entity.FaqKeyword;
 import com.maidao.edu.news.api.faq.entity.FaqWord;
 import com.maidao.edu.news.api.faq.entity.SimpleFaq;
 import com.maidao.edu.news.api.faq.model.Faq;
 import com.maidao.edu.news.api.faq.qo.FaqQo;
+import com.maidao.edu.news.api.faq.repository.IFaqRepository;
+import com.maidao.edu.news.common.cache.CacheOptions;
+import com.maidao.edu.news.common.cache.KvCacheFactory;
+import com.maidao.edu.news.common.cache.KvCacheWrap;
+import com.maidao.edu.news.common.entity.Constants;
 import com.maidao.edu.news.common.exception.RepositoryException;
+import com.maidao.edu.news.common.util.L;
+import com.maidao.edu.news.common.util.StringUtils;
 import com.sunnysuperman.kvcache.RepositoryProvider;
 import com.sunnysuperman.kvcache.converter.BeanModelConverter;
 import com.sunnysuperman.kvcache.converter.ListModelConverter;

@@ -134,19 +134,18 @@ public class DateUtils {
         }
         Calendar cal = Calendar.getInstance(timezone);
         cal.setTime(date);
-        StringBuilder buf = new StringBuilder();
-        buf.append(cal.get(Calendar.YEAR)).append('-');
-        buf.append(pad2(cal.get(Calendar.MONTH) + 1)).append('-');
-        buf.append(pad2(cal.get(Calendar.DATE))).append(' ');
-        buf.append(pad2(cal.get(Calendar.HOUR_OF_DAY))).append(':');
-        buf.append(pad2(cal.get(Calendar.MINUTE)));
-        return buf.toString();
+        String buf = String.valueOf(cal.get(Calendar.YEAR)) + '-' +
+                pad2(cal.get(Calendar.MONTH) + 1) + '-' +
+                pad2(cal.get(Calendar.DATE)) + ' ' +
+                pad2(cal.get(Calendar.HOUR_OF_DAY)) + ':' +
+                pad2(cal.get(Calendar.MINUTE));
+        return buf;
     }
 
     public static Long addDays(Long time, int days) {
         if (time == null) {
             return 0L;
         }
-        return time + days * 24 * 60 * 60 * 1000;
+        return time + (long) days * 24 * 60 * 60 * 1000;
     }
 }

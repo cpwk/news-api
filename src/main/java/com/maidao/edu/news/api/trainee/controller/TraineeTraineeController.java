@@ -1,12 +1,12 @@
 package com.maidao.edu.news.api.trainee.controller;
 
 
+import com.maidao.edu.news.api.trainee.model.Trainee;
+import com.maidao.edu.news.api.trainee.service.ITraineeService;
 import com.maidao.edu.news.common.controller.Action;
 import com.maidao.edu.news.common.controller.ActionSession;
 import com.maidao.edu.news.common.controller.BaseController;
 import com.maidao.edu.news.common.entity.ValCode;
-import com.maidao.edu.news.api.trainee.model.Trainee;
-import com.maidao.edu.news.api.trainee.service.ITraineeService;
 import com.maidao.edu.news.common.service.ICommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

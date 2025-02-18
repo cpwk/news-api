@@ -1,7 +1,7 @@
 package com.maidao.edu.news.api.custeval.repository;
 
-import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import com.maidao.edu.news.api.custeval.model.Custeval;
+import com.maidao.edu.news.common.reposiotry.BaseRepository;
 
 /**
  * 创建人:chenpeng

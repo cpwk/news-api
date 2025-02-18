@@ -22,10 +22,7 @@ public class WebUtils {
             return value;
         }
         value = request.getHeader(key);
-        if (value != null) {
-            return value;
-        }
-        return null;
+        return value;
     }
 
     private static boolean isValidIp(String ip) {

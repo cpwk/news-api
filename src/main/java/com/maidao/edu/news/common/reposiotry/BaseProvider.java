@@ -1,12 +1,12 @@
 package com.maidao.edu.news.common.reposiotry;
 
 import com.maidao.edu.news.common.entity.Constants;
+import com.maidao.edu.news.common.exception.RuntimeServiceException;
 import com.maidao.edu.news.common.reposiotry.support.DataQueryObject;
 import com.maidao.edu.news.common.reposiotry.support.QueryField;
 import com.maidao.edu.news.common.reposiotry.support.QueryTable;
 import com.maidao.edu.news.common.reposiotry.support.QueryType;
 import com.maidao.edu.news.common.util.StringUtils;
-import com.maidao.edu.news.common.exception.RuntimeServiceException;
 import com.sunnysuperman.commons.util.FormatUtil;
 import org.springframework.util.CollectionUtils;
 

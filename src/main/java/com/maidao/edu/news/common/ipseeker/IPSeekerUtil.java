@@ -34,22 +34,21 @@ public class IPSeekerUtil {
     }
 
     public static String getIpStringFromBytes(byte[] ip) {
-        StringBuffer sb = new StringBuffer();
-        sb.append(ip[0] & 0xFF);
-        sb.append('.');
-        sb.append(ip[1] & 0xFF);
-        sb.append('.');
-        sb.append(ip[2] & 0xFF);
-        sb.append('.');
-        sb.append(ip[3] & 0xFF);
-        return sb.toString();
+        String sb = String.valueOf(ip[0] & 0xFF) +
+                '.' +
+                (ip[1] & 0xFF) +
+                '.' +
+                (ip[2] & 0xFF) +
+                '.' +
+                (ip[3] & 0xFF);
+        return sb;
     }
 
     public static String getFullLocation(String ip) {
         return IPSeeker.getInstance().getCountry(ip) + IPSeeker.getInstance().getArea(ip);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(IPSeeker.getInstance().getCountry("202.120.32.43"));
         System.out.println(IPSeeker.getInstance().getArea("202.120.32.43"));
     }

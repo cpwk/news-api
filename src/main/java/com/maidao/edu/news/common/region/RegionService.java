@@ -28,7 +28,7 @@ public class RegionService {
     }
 
     private String[] getCodes(String code) {
-        String codes[] = new String[3];
+        String[] codes = new String[3];
         if (code != null && code.length() == 6) {
             codes[0] = code.substring(0, 2);
             codes[1] = code.substring(0, 4);
@@ -42,7 +42,7 @@ public class RegionService {
             return "数据错误";
         }
 
-        String codes[] = getCodes(code);
+        String[] codes = getCodes(code);
         StringBuilder pcd = new StringBuilder();
 
         for (Region r1 : regions) {

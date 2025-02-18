@@ -2,10 +2,10 @@ package com.maidao.edu.news.api.partner.controller;
 
 import com.maidao.edu.news.api.partner.model.Partner;
 import com.maidao.edu.news.api.partner.qo.PartnerQo;
+import com.maidao.edu.news.api.partner.service.IPartnerService;
 import com.maidao.edu.news.common.controller.Action;
 import com.maidao.edu.news.common.controller.ActionSession;
 import com.maidao.edu.news.common.controller.BaseController;
-import com.maidao.edu.news.api.partner.service.IPartnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

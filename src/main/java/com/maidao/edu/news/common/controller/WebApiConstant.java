@@ -9,5 +9,5 @@ package com.maidao.edu.news.common.controller;
  * 类描述:TODO
  **/
 public interface WebApiConstant {
-    public static final String KEY_USER_TOKEN = "usr_token";
+    String KEY_USER_TOKEN = "usr_token";
 }

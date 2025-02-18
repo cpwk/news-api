@@ -17,9 +17,9 @@ import java.util.Map;
 @Component
 public class CodeCache {
 
-    private static Map<String, String> codeMap = new HashMap<>();
+    private static final Map<String, String> codeMap = new HashMap<>();
 
-    private static Map<String, String> mobileMap = new HashMap<>();
+    private static final Map<String, String> mobileMap = new HashMap<>();
 
     public static void saveCode(String key, String code) {
         codeMap.put(key, code);

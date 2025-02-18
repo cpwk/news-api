@@ -226,8 +226,7 @@ public class StringUtils extends StringUtil {
         if (!(sample == null || sample.trim().equals(""))) {
             String[] ss = sample.split(",");
             if (!(ss == null || ss.length == 0)) {
-                for (String s : ss)
-                    list.add(s);
+                Collections.addAll(list, ss);
             }
         } else {
             if (inittype == 1)
@@ -492,17 +491,11 @@ public class StringUtils extends StringUtil {
     }
 
     public static boolean validatePassword(String password) {
-        if (password == null || password.length() < 6 || password.length() > 18) {
-            return false;
-        }
-        return true;
+        return password != null && password.length() >= 6 && password.length() <= 18;
     }
 
     public static boolean validateNick(String nick) {
-        if (nick == null || nick.length() < 2 || nick.length() > 6) {
-            return false;
-        }
-        return true;
+        return nick != null && nick.length() >= 2 && nick.length() <= 6;
     }
 
     public static String encryptPassword(String password, String salt) {

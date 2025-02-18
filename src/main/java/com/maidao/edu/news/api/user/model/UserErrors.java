@@ -13,15 +13,15 @@ import com.maidao.edu.news.common.exception.ErrorCode;
 
 public interface UserErrors extends ErrorCode {
 
-    public final static int ERR_USER_MOBILE_INVALID = 10000;
-    public final static int ERR_USER_EMAIE_INVALID = 10001;
-    public final static int ERR_USER_NICK_FORMAT = 10002;
-    public final static int ERR_USER_PASSWORD_FORMAT = 10003;
-    public final static int ERR_USER_MOBILE_USED = 10004;
-    public final static int ERR_USER_EMAIE_USED = 10005;
-    public final static int ERR_USER_NOTEXIST = 10006;
-    public final static int ERR_USER_PASSWORD_ERROR = 10007;
-    public final static int ERR_USER_MOBILE_DIFFER = 10008;
-    public static final int ERR_MOBILECODE_NONE = 1011;
+    int ERR_USER_MOBILE_INVALID = 10000;
+    int ERR_USER_EMAIE_INVALID = 10001;
+    int ERR_USER_NICK_FORMAT = 10002;
+    int ERR_USER_PASSWORD_FORMAT = 10003;
+    int ERR_USER_MOBILE_USED = 10004;
+    int ERR_USER_EMAIE_USED = 10005;
+    int ERR_USER_NOTEXIST = 10006;
+    int ERR_USER_PASSWORD_ERROR = 10007;
+    int ERR_USER_MOBILE_DIFFER = 10008;
+    int ERR_MOBILECODE_NONE = 1011;
 
 }

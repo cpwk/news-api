@@ -66,7 +66,7 @@ public class UserServicelmpl implements UserService {
         if (exist == null) {
             throw new ServiceException(ERR_USER_NOTEXIST);
         }
-        if (((StringUtils.encryptPassword(password, userConfig.getSalt())).equals(exist.getPassword())) != true) {
+        if (!((StringUtils.encryptPassword(password, userConfig.getSalt())).equals(exist.getPassword()))) {
             throw new ServiceException(ERR_USER_PASSWORD_ERROR);
         }
         UserSession userSession = new UserSession();
@@ -82,10 +82,10 @@ public class UserServicelmpl implements UserService {
 
     @Override
     public void signUp(User user, String key, String smsCode) throws Exception {
-        if (!(codeCache.getMobile(key).equals(user.getMobile()))) {
+        if (!(CodeCache.getMobile(key).equals(user.getMobile()))) {
             throw new ServiceException(ERR_USER_MOBILE_DIFFER);
         }
-        if (!(smsCode.equals(codeCache.getCode(key)))) {
+        if (!(smsCode.equals(CodeCache.getCode(key)))) {
             throw new ServiceException(ERR_VCODE_INVALID);
         }
         if (!StringUtils.isChinaMobile(user.getMobile())) {
@@ -136,7 +136,7 @@ public class UserServicelmpl implements UserService {
 
     @Override
     public void resetPassword(String mobile, String password, String key, String smsCode) throws Exception {
-        if (!(smsCode.equals(codeCache.getCode(key)))) {
+        if (!(smsCode.equals(CodeCache.getCode(key)))) {
             throw new ServiceException(ERR_VCODE_INVALID);
         }
         if (!StringUtils.validatePassword(password)) {
@@ -156,7 +156,7 @@ public class UserServicelmpl implements UserService {
             throw new ServiceException(ERR_USER_PASSWORD_FORMAT);
         }
         User exist = userRepository.findByMobile(mobile);
-        if (((StringUtils.encryptPassword(password, userConfig.getSalt())).equals(exist.getPassword())) != true) {
+        if (!((StringUtils.encryptPassword(password, userConfig.getSalt())).equals(exist.getPassword()))) {
             throw new ServiceException(ERR_USER_PASSWORD_ERROR);
         }
         exist.setPassword(StringUtils.encryptPassword(newpassword, userConfig.getSalt()));

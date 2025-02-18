@@ -1,8 +1,8 @@
 package com.maidao.edu.news.api.job.service;
 
-import com.maidao.edu.news.api.job.repository.IJobRepository;
 import com.maidao.edu.news.api.job.model.Job;
 import com.maidao.edu.news.api.job.qo.JobQo;
+import com.maidao.edu.news.api.job.repository.IJobRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

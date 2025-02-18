@@ -1,12 +1,12 @@
 package com.maidao.edu.news.api.practice.service;
 
 
-import com.maidao.edu.news.api.practice.repository.IPracticeRepository;
 import com.maidao.edu.news.api.practice.entity.PracticeItemType;
 import com.maidao.edu.news.api.practice.entity.PracticeOption;
 import com.maidao.edu.news.api.practice.model.Practice;
 import com.maidao.edu.news.api.practice.qo.PracticeQo;
 import com.maidao.edu.news.api.practice.qo.PracticeWo;
+import com.maidao.edu.news.api.practice.repository.IPracticeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

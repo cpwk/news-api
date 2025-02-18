@@ -20,7 +20,7 @@ import java.util.Map;
  **/
 public class RedisClient {
     private static final Logger LOG = LoggerFactory.getLogger(RedisClient.class);
-    private JedisPool pool;
+    private final JedisPool pool;
 
     public RedisClient(JedisPool pool, boolean testOnStart) {
         this.pool = pool;
@@ -97,7 +97,7 @@ public class RedisClient {
         return doWork(new HgetAllWork(key));
     }
 
-    public static interface RedisWork<T> {
+    public interface RedisWork<T> {
         T run(Jedis jedis);
     }
 

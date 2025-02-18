@@ -22,12 +22,12 @@ import java.util.Random;
 public class RandomValidateCodeUtil {
 
     private static final Logger logger = LoggerFactory.getLogger(RandomValidateCodeUtil.class);
-    private String randString = "0123456789";
-    private int width = 75;
-    private int height = 30;
-    private int lineSize = 40;
-    private int stringNum = 4;
-    private Random random = new Random();
+    private final String randString = "0123456789";
+    private final int width = 75;
+    private final int height = 30;
+    private final int lineSize = 40;
+    private final int stringNum = 4;
+    private final Random random = new Random();
 
     /**
      * 获得字体

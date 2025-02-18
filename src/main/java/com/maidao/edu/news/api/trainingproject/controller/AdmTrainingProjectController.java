@@ -1,11 +1,11 @@
 package com.maidao.edu.news.api.trainingproject.controller;
 
-import com.maidao.edu.news.common.controller.Action;
-import com.maidao.edu.news.common.controller.ActionSession;
-import com.maidao.edu.news.common.controller.BaseController;
 import com.maidao.edu.news.api.trainingproject.model.TrainingProject;
 import com.maidao.edu.news.api.trainingproject.qo.TrainingProjectQo;
 import com.maidao.edu.news.api.trainingproject.service.ITrainingProjectService;
+import com.maidao.edu.news.common.controller.Action;
+import com.maidao.edu.news.common.controller.ActionSession;
+import com.maidao.edu.news.common.controller.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

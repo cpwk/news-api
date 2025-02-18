@@ -1,8 +1,8 @@
 package com.maidao.edu.news.api.article.repository;
 
 
-import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import com.maidao.edu.news.api.article.model.Article;
+import com.maidao.edu.news.common.reposiotry.BaseRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -21,6 +21,6 @@ public interface IArticleRepository extends BaseRepository<Article, Integer> {
     @Transactional
     @Modifying
     @Query("update Article set visitNum= visitNum+1 where id =:id")
-    public void addVisit(@Param(value = "id") Integer id);
+    void addVisit(@Param(value = "id") Integer id);
 
 }

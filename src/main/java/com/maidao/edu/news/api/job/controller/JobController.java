@@ -1,7 +1,6 @@
 package com.maidao.edu.news.api.job.controller;
 
 
-import com.maidao.edu.news.common.entity.KeyValue;
 import com.maidao.edu.news.api.job.entity.JobTypeVO;
 import com.maidao.edu.news.api.job.model.Job;
 import com.maidao.edu.news.api.job.qo.JobQo;
@@ -9,6 +8,7 @@ import com.maidao.edu.news.api.job.service.IJobService;
 import com.maidao.edu.news.common.controller.Action;
 import com.maidao.edu.news.common.controller.ActionSession;
 import com.maidao.edu.news.common.controller.BaseController;
+import com.maidao.edu.news.common.entity.KeyValue;
 import com.maidao.edu.news.common.exception.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -32,7 +32,7 @@ public class JobController extends BaseController {
     @Autowired
     private IJobService jobService;
 
-    private List<KeyValue> jobTypes = JobTypeVO.getTypes();
+    private final List<KeyValue> jobTypes = JobTypeVO.getTypes();
 
     @RequestMapping(value = "/jobTypes")
     @Action(session = ActionSession.ADMIN)
